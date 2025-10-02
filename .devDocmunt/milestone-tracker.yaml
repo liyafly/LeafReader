@@ -1,0 +1,78 @@
+# Auto-generated outline for syncing with planning tools (Jira/Linear/Notion)
+milestones:
+  - id: v0.1
+    name: "基础导入与直读"
+    owner: "Solo Dev"
+    supporting: []
+    sprint_window: "Focus Block v0.1"
+    target_date: 2024-07-19
+    status: in-progress
+    workflows:
+      - id: A
+        name: "文件导入入口"
+        tasks: ["A1", "A2", "A3", "A4"]
+      - id: B
+        name: "解析与本地书库"
+        tasks: ["B1", "B2", "B3", "B4"]
+      - id: C
+        name: "阅读器初版"
+        tasks: ["C1", "C2", "C3", "C4"]
+  - id: v0.2
+    name: "自定义渲染"
+    owner: "Solo Dev"
+    supporting: []
+    sprint_window: "TBD"
+    target_date: null
+    status: backlog
+    workflows:
+      - id: D
+        name: "全屏章头识别"
+        tasks: ["D1", "D2", "D3"]
+      - id: E
+        name: "CSS 注入管线"
+        tasks: ["E1", "E2", "E3"]
+  - id: v0.3
+    name: "脚注弹窗兼容"
+    owner: "Solo Dev"
+    supporting: []
+    sprint_window: "TBD"
+    target_date: null
+    status: backlog
+    workflows:
+      - id: F
+        name: "脚注基础设施"
+        tasks: ["F1", "F2"]
+      - id: G
+        name: "多看脚注"
+        tasks: ["G1", "G2", "G3"]
+  - id: v0.4
+    name: "阅读体验增强"
+    owner: "Solo Dev"
+    supporting: []
+    sprint_window: "TBD"
+    target_date: null
+    status: backlog
+    workflows:
+      - id: H
+        name: "字体映射"
+        tasks: ["H1", "H2", "H3"]
+      - id: I
+        name: "基础阅读设置"
+        tasks: ["I1", "I2", "I3"]
+  - id: v0.5
+    name: "LCP DRM 最小闭环"
+    owner: "Solo Dev"
+    supporting: []
+    sprint_window: "TBD"
+    target_date: null
+    status: backlog
+    workflows:
+      - id: J
+        name: "LCP 集成"
+        tasks: ["J1", "J2", "J3"]
+assumptions:
+  start_date: 2024-07-01
+  cadence: "Solo focus block (~3 weeks)"
+  notes:
+    - "v0.1 暂不引入数据库，使用文件/JSON 持久化"
+    - "后续里程碑待 v0.1 验收后重新估算"
