@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		007BD7322E8F808F0099FDBA /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 007BD7312E8F808F0099FDBA /* Kingfisher */; };
+		007BD7352E8F822C0099FDBA /* GRDB in Frameworks */ = {isa = PBXBuildFile; productRef = 007BD7342E8F822C0099FDBA /* GRDB */; };
+		007BD7382E8F82390099FDBA /* SwiftSoup in Frameworks */ = {isa = PBXBuildFile; productRef = 007BD7372E8F82390099FDBA /* SwiftSoup */; };
+		007BD73B2E8F82860099FDBA /* AsyncAlgorithms in Frameworks */ = {isa = PBXBuildFile; productRef = 007BD73A2E8F82860099FDBA /* AsyncAlgorithms */; };
 		00DB899F2E8EB684000A090D /* ReadiumAdapterGCDWebServer in Frameworks */ = {isa = PBXBuildFile; productRef = 00DB899E2E8EB684000A090D /* ReadiumAdapterGCDWebServer */; };
 		00DB89A12E8EB684000A090D /* ReadiumAdapterLCPSQLite in Frameworks */ = {isa = PBXBuildFile; productRef = 00DB89A02E8EB684000A090D /* ReadiumAdapterLCPSQLite */; };
 		00DB89A32E8EB684000A090D /* ReadiumLCP in Frameworks */ = {isa = PBXBuildFile; productRef = 00DB89A22E8EB684000A090D /* ReadiumLCP */; };
@@ -14,6 +18,9 @@
 		00DB89A72E8EB684000A090D /* ReadiumOPDS in Frameworks */ = {isa = PBXBuildFile; productRef = 00DB89A62E8EB684000A090D /* ReadiumOPDS */; };
 		00DB89A92E8EB684000A090D /* ReadiumShared in Frameworks */ = {isa = PBXBuildFile; productRef = 00DB89A82E8EB684000A090D /* ReadiumShared */; };
 		00DB89AB2E8EB684000A090D /* ReadiumStreamer in Frameworks */ = {isa = PBXBuildFile; productRef = 00DB89AA2E8EB684000A090D /* ReadiumStreamer */; };
+		00DB89AE2E8EB814000A090D /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 00DB89AD2E8EB814000A090D /* SnapKit */; };
+		00DB89B32E8EB8E5000A090D /* FactoryKit in Frameworks */ = {isa = PBXBuildFile; productRef = 00DB89B22E8EB8E5000A090D /* FactoryKit */; };
+		00DB89B52E8EB8E5000A090D /* FactoryTesting in Frameworks */ = {isa = PBXBuildFile; productRef = 00DB89B42E8EB8E5000A090D /* FactoryTesting */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,10 +83,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				00DB89A32E8EB684000A090D /* ReadiumLCP in Frameworks */,
+				00DB89AE2E8EB814000A090D /* SnapKit in Frameworks */,
+				00DB89B32E8EB8E5000A090D /* FactoryKit in Frameworks */,
 				00DB89A92E8EB684000A090D /* ReadiumShared in Frameworks */,
+				007BD7352E8F822C0099FDBA /* GRDB in Frameworks */,
+				007BD7382E8F82390099FDBA /* SwiftSoup in Frameworks */,
+				007BD73B2E8F82860099FDBA /* AsyncAlgorithms in Frameworks */,
 				00DB89A12E8EB684000A090D /* ReadiumAdapterLCPSQLite in Frameworks */,
 				00DB89A72E8EB684000A090D /* ReadiumOPDS in Frameworks */,
 				00DB89AB2E8EB684000A090D /* ReadiumStreamer in Frameworks */,
+				007BD7322E8F808F0099FDBA /* Kingfisher in Frameworks */,
 				00DB89A52E8EB684000A090D /* ReadiumNavigator in Frameworks */,
 				00DB899F2E8EB684000A090D /* ReadiumAdapterGCDWebServer in Frameworks */,
 			);
@@ -89,6 +102,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				00DB89B52E8EB8E5000A090D /* FactoryTesting in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -149,6 +163,12 @@
 				00DB89A62E8EB684000A090D /* ReadiumOPDS */,
 				00DB89A82E8EB684000A090D /* ReadiumShared */,
 				00DB89AA2E8EB684000A090D /* ReadiumStreamer */,
+				00DB89AD2E8EB814000A090D /* SnapKit */,
+				00DB89B22E8EB8E5000A090D /* FactoryKit */,
+				007BD7312E8F808F0099FDBA /* Kingfisher */,
+				007BD7342E8F822C0099FDBA /* GRDB */,
+				007BD7372E8F82390099FDBA /* SwiftSoup */,
+				007BD73A2E8F82860099FDBA /* AsyncAlgorithms */,
 			);
 			productName = LeafReader;
 			productReference = 00DB88262E8D63C7000A090D /* LeafReader.app */;
@@ -172,6 +192,7 @@
 			);
 			name = LeafReaderTests;
 			packageProductDependencies = (
+				00DB89B42E8EB8E5000A090D /* FactoryTesting */,
 			);
 			productName = LeafReaderTests;
 			productReference = 00DB883C2E8D63CA000A090D /* LeafReaderTests.xctest */;
@@ -234,6 +255,12 @@
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
 				00DB899D2E8EB684000A090D /* XCLocalSwiftPackageReference "../swift-toolkit" */,
+				00DB89AC2E8EB814000A090D /* XCRemoteSwiftPackageReference "SnapKit" */,
+				00DB89B12E8EB8E5000A090D /* XCRemoteSwiftPackageReference "Factory" */,
+				007BD7302E8F808F0099FDBA /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				007BD7332E8F822C0099FDBA /* XCRemoteSwiftPackageReference "GRDB.swift" */,
+				007BD7362E8F82390099FDBA /* XCRemoteSwiftPackageReference "SwiftSoup" */,
+				007BD7392E8F82860099FDBA /* XCRemoteSwiftPackageReference "swift-async-algorithms" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 00DB88272E8D63C7000A090D /* Products */;
@@ -628,7 +655,78 @@
 		};
 /* End XCLocalSwiftPackageReference section */
 
+/* Begin XCRemoteSwiftPackageReference section */
+		007BD7302E8F808F0099FDBA /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 8.5.0;
+			};
+		};
+		007BD7332E8F822C0099FDBA /* XCRemoteSwiftPackageReference "GRDB.swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/groue/GRDB.swift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.8.0;
+			};
+		};
+		007BD7362E8F82390099FDBA /* XCRemoteSwiftPackageReference "SwiftSoup" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/scinfu/SwiftSoup.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.11.1;
+			};
+		};
+		007BD7392E8F82860099FDBA /* XCRemoteSwiftPackageReference "swift-async-algorithms" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-async-algorithms.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.4;
+			};
+		};
+		00DB89AC2E8EB814000A090D /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.7.1;
+			};
+		};
+		00DB89B12E8EB8E5000A090D /* XCRemoteSwiftPackageReference "Factory" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/hmlongco/Factory";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.5.3;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
 /* Begin XCSwiftPackageProductDependency section */
+		007BD7312E8F808F0099FDBA /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 007BD7302E8F808F0099FDBA /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+		007BD7342E8F822C0099FDBA /* GRDB */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 007BD7332E8F822C0099FDBA /* XCRemoteSwiftPackageReference "GRDB.swift" */;
+			productName = GRDB;
+		};
+		007BD7372E8F82390099FDBA /* SwiftSoup */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 007BD7362E8F82390099FDBA /* XCRemoteSwiftPackageReference "SwiftSoup" */;
+			productName = SwiftSoup;
+		};
+		007BD73A2E8F82860099FDBA /* AsyncAlgorithms */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 007BD7392E8F82860099FDBA /* XCRemoteSwiftPackageReference "swift-async-algorithms" */;
+			productName = AsyncAlgorithms;
+		};
 		00DB899E2E8EB684000A090D /* ReadiumAdapterGCDWebServer */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = ReadiumAdapterGCDWebServer;
@@ -656,6 +754,21 @@
 		00DB89AA2E8EB684000A090D /* ReadiumStreamer */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = ReadiumStreamer;
+		};
+		00DB89AD2E8EB814000A090D /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 00DB89AC2E8EB814000A090D /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+		00DB89B22E8EB8E5000A090D /* FactoryKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 00DB89B12E8EB8E5000A090D /* XCRemoteSwiftPackageReference "Factory" */;
+			productName = FactoryKit;
+		};
+		00DB89B42E8EB8E5000A090D /* FactoryTesting */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 00DB89B12E8EB8E5000A090D /* XCRemoteSwiftPackageReference "Factory" */;
+			productName = FactoryTesting;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
